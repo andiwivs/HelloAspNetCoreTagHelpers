@@ -6,6 +6,12 @@
 
 <h2>Home</h2>
 
+<ul>
+    <li><a href="@Url.Action("SlowToProcess")">Async example</a></li>
+    <li><a href="@Url.Action("ModelBound")">Model-bound example</a></li>
+    <li><a href="@Url.Action("ViewContext")">ViewContext example</a></li>
+</ul>
+
 <div>
     My-customer:
     <my-customer></my-customer>
@@ -14,9 +20,4 @@
 <div>
     Auto-price:
     <auto-price make="chevy" model-name="camero"></auto-price>
-</div>
-
-<div>
-    Slow-to-process:
-    <slow-to-process></slow-to-process>
 </div>

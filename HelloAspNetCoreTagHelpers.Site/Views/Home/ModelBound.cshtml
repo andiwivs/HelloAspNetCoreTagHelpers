@@ -1,0 +1,18 @@
+﻿@model AddressVM
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Model-bound example</h2>
+
+<home-link />
+
+@* note: we are binding directly to the model properties associated with this view *@
+<model-bound helper-for="Line1"></model-bound>
+
+<br />
+<br />
+
+<model-bound helper-for="Postcode"></model-bound>
