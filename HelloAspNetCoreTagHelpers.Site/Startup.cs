@@ -21,6 +21,8 @@ namespace HelloAspNetCoreTagHelpers.Site
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseMvcWithDefaultRoute();
         }
     }

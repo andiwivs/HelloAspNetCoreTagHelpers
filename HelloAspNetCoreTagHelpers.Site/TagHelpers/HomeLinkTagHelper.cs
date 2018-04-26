@@ -7,12 +7,13 @@ namespace HelloAspNetCoreTagHelpers.Site.TagHelpers
     {
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            output.PreElement.SetHtmlContent("<p>&lt; ");
+            output.PreElement.SetHtmlContent("<p>");
 
             output.TagName = "a";
             output.TagMode = TagMode.StartTagAndEndTag;
             output.Attributes.Add("href", "/");
-            output.Content.SetContent("Home");
+            output.Attributes.Add("class", "btn btn-secondary");
+            output.Content.SetHtmlContent("<i class='fas fa-home'></i> Home");
 
             output.PostElement.SetHtmlContent("</p>");
         }

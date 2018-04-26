@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Nested";
+}
+
+<h2>Nested example</h2>
+
+<home-link />
+
+<tab-container heading="Some heading" active-page="Page 3">
+    <tab title="Page 1" href="#"></tab>
+    <tab title="Page 2" href="#"></tab>
+    <tab title="Page 3" href="#"></tab>
+    <tab title="Page 4" href="#" is-disabled="true"></tab>
+</tab-container>
+
+@*<div class="container">
+    <h3>Some heading</h3>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="#">Page 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Page 3</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="#">Page 4</a></li>
+    </ul>
+</div>*@

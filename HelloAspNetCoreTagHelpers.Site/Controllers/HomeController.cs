@@ -34,5 +34,10 @@ namespace HelloAspNetCoreTagHelpers.Site.Controllers
 
             return View(model);
         }
+
+        public IActionResult Nested()
+        {
+            return View();
+        }
     }
 }
