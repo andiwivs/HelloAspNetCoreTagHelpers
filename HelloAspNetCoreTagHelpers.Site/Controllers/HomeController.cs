@@ -39,5 +39,10 @@ namespace HelloAspNetCoreTagHelpers.Site.Controllers
         {
             return View();
         }
+
+        public IActionResult DependencyInjection()
+        {
+            return View();
+        }
     }
 }
